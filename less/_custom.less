@@ -3,6 +3,7 @@
 @import "mixins.less";
 
 @tmp-color: #526270;
+@gray-bg-color: #ecf0f1;
 
 .btn-wrap-center {
   text-align: center;
@@ -11,8 +12,8 @@
 section, .container {
   min-width: 320px;
 }
-.because-bad {
-  background-color: #ecf0f1;
+.gray-bg {
+  background-color: @gray-bg-color;
 }
 .btn-lg {
   text-transform: uppercase;
@@ -248,3 +249,11 @@ h3 {
   }
 }
 /* # title-sep */
+/* .how-increase-img-wrap */
+.how-increase-img-wrap {
+  margin-bottom: 72px;
+}
+.how-increase-img-wrap img {
+  margin: auto;
+}
+/* # .how-increase-img-wrap */
