@@ -23,6 +23,47 @@ section, .container {
   margin: auto;
 }
 
+/* forms */
+.form-control {
+  border-radius: 5px;
+  height: 42px;
+}
+.has-feedback label~.form-control-feedback {
+  top: 28px;
+}
+.form-submit-wrap {
+  margin: auto;
+  text-align: center;
+}
+@media all and (min-width: (@screen-sm-min)) {
+  .form-submit-wrap {
+    padding-top: 19px;
+  }
+}
+form.footer-form {
+  margin-top: 55px;
+  margin-bottom: 67px;
+}
+label {
+  font-weight: normal;
+  padding-left: 10px;
+}
+/* # forms */
+
+/* btn-default */
+.btn-default {
+  border-width: 2px;
+  background-color: transparent;
+  color: #fff;
+  .transition(all .15s linear);
+}
+.btn-default:hover {
+  background-color: white;
+  border-color: white;
+  color: @gray;
+}
+/* # btn-default */
+
 /* h1, h2, h3, h4 */
 h1, h2, h3 {
   text-align: center;
@@ -87,18 +128,16 @@ h4 {
 .first-banner h3 {
   margin: 25px 190px 77px;
 }
-.first-banner .btn-default {
-  border-width: 2px;
-  background-color: transparent;
-  color: #fff;
-  .transition(all .15s linear);
-}
-.first-banner .btn-default:hover {
-  background-color: white;
-  border-color: white;
-  color: @gray;
-}
 /* # first-banner */
+
+/* contact-us */
+.contact-us {
+  background-image: url(../img/contact-us-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+/* # contact-us */
 
 /* our-offer */
 .our-offer {
