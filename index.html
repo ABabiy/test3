@@ -26,7 +26,7 @@
         <div class="title-sep white"><div></div></div>
         <h3>Создайте нескончаемый поток заявок от посетителей вашего сайта</h3>
         <div class="btn-wrap btn-wrap-center">
-            <a href="#" class="btn btn-default btn-lg" role="button">Узнать подробнее</a>
+            <a href="#" class="btn btn-default btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Узнать подробнее</a>
         </div>
         <div class="more-btn-wrap">
             <a href="#!" class="more-btn">more</a>
@@ -109,7 +109,7 @@
             <p><strong>Все, что Вам нужно - увеличить конверсию.</strong></p>
         </div>
         <div class="btn-wrap btn-wrap-center">
-            <a href="#" class="btn btn-primary btn-lg" role="button">Сделать рекламу<wbr> более эффективной</a>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Сделать рекламу<wbr> более эффективной</a>
         </div>
     </div>
 </section>
@@ -128,7 +128,7 @@
                 компании и вашего продукта. А также привлекать посетителей к действию.</p>
         </div>
         <div class="btn-wrap btn-wrap-center">
-            <a href="#" class="btn btn-primary btn-lg" role="button">Увеличить конверсию</a>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Увеличить конверсию</a>
         </div>
     </div>
 </section>
@@ -200,7 +200,7 @@
                 </div>
             </div>
             <div class="btn-wrap btn-wrap-center">
-                <a href="#" class="btn btn-primary btn-lg" role="button">Заказать посадочную<wbr> страницу</a>
+                <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Заказать посадочную<wbr> страницу</a>
             </div>
         </div>
     </section>
@@ -216,7 +216,7 @@
                 лучшего решения.</p>
         </div>
         <div class="btn-wrap btn-wrap-center">
-            <a href="#" class="btn btn-primary btn-lg" role="button">Оставить заявку</a>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Оставить заявку</a>
         </div>
     </div>
 </section>
@@ -391,7 +391,7 @@
                 </div>
             </div>
             <div class="btn-wrap btn-wrap-center">
-                <a href="#" class="btn btn-primary btn-lg" role="button">Заказать посадочную<wbr> страницу</a>
+                <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Заказать посадочную<wbr> страницу</a>
             </div>
         </div>
     </section>
@@ -405,7 +405,7 @@
             <img src="img/screen-how-we-work.jpg" class="img-responsive">
         </div>
         <div class="btn-wrap btn-wrap-center">
-            <a href="#" class="btn btn-primary btn-lg" role="button">Заказать посадочную<wbr> страницу</a>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Заказать посадочную<wbr> страницу</a>
         </div>
     </div>
 </section>
@@ -418,7 +418,7 @@
             <img src="img/screen-reviews.jpg" class="img-responsive">
         </div>
         <div class="btn-wrap btn-wrap-center">
-            <a href="#" class="btn btn-primary btn-lg" role="button">Хочу такие же результаты</a>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Хочу такие же результаты</a>
         </div>
     </div>
 </section>
@@ -431,11 +431,10 @@
             <img src="img/screen-portfolio.jpg" class="img-responsive">
         </div>
         <div class="btn-wrap btn-wrap-center">
-            <a href="#" class="btn btn-primary btn-lg" role="button">Заказать посадочную<wbr> страницу</a>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#popup-form">Заказать посадочную<wbr> страницу</a>
         </div>
     </div>
 </section>
-
 <section class="contact-us">
     <div class="container">
         <h2>Связаться с нами</h2>
@@ -478,8 +477,6 @@
         </form>
     </div>
 </section>
-
-
 <footer>
     <div class="container">
         <div class="row">
@@ -493,7 +490,7 @@
                     <span class="phone">8 800 500-9661</span>
                 </p>
                 <p class="callme">
-                    <a href="#!">Перезвоните мне</a>
+                    <a href="#!" data-toggle="modal" data-target="#popup-callme-form">Перезвоните мне</a>
                 </p>
             </div>
             <div class="col col-xs-16 col-xs-pull-22 left">
@@ -505,6 +502,81 @@
         </div>
     </div>
 </footer>
+
+<div class="modal fade" id="popup-form" tabindex="-1" role="dialog" aria-labelledby="popup-form-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-body-form">
+                    <h4 class="modal-title" id="popup-form-label">Оставить заявку</h4>
+                    <div class="title-sep white"><div></div></div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-form">
+                    <form class="popup-form" method="post">
+                        <div class="form-group has-success has-feedback">
+                            <label class="control-label" for="formname2">Ваше имя</label>
+                            <input type="text" class="form-control" id="formname2" placeholder="Ваше имя">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                        <div class="form-group has-warning has-feedback">
+                            <label class="control-label" for="formemail2">Ваше E-mail</label>
+                            <input type="text" class="form-control" id="formemail2" placeholder="Ваше E-mail">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                        <div class="form-group has-error has-feedback">
+                            <label class="control-label" for="formphone2">Ваш телефон</label>
+                            <input type="text" class="form-control" id="formphone2" placeholder="Ваш телефон">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                        <div class="form-submit-wrap">
+                            <button type="submit" class="btn btn-default btn-lg">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="popup-callme-form" tabindex="-1" role="dialog" aria-labelledby="popup-callme-form-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-body-form">
+                    <h4 class="modal-title" id="popup-callme-form-label">Перезвоните мне</h4>
+                    <div class="title-sep white"><div></div></div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-form">
+                    <form class="popup-form" method="post">
+                        <div class="form-group has-error has-feedback">
+                            <label class="control-label" for="formphone3">Ваш телефон</label>
+                            <input type="text" class="form-control" id="formphone3" placeholder="Ваш телефон">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                        <div class="form-submit-wrap">
+                            <button type="submit" class="btn btn-default btn-lg">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
