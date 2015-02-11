@@ -10,6 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/_custom.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,8 +19,33 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-
+<body data-spy="scroll" data-target=".navbar-example">
+<div id="1" data-offset="100">
+    <section class="top-block">
+        <div class="container-fluid no-padding">
+            <div class="top-contact">
+                <div class="container">
+                    <span class="call-me"><a href="#">Перезвоните мне</a></span>
+                    <span class="phone-2">8-800-2000-600</span>
+                    <span class="phone-1">8-800-2000-600</span>
+                </div>
+            </div>
+            <div class="top-menu">
+                <div class="container">
+                    <span class="logo"><img src="img/logo.png" alt=""/></span>
+                    <span class="navbar-example">
+                        <ul class="clearfix nav nav-tabs">
+                            <li><a href="#4" class="scrollto">контакты</a></li>
+                            <li><a href="#3" class="scrollto">портфолио</a></li>
+                            <li><a href="#2" class="scrollto">преимущества</a></li>
+                            <li><a href="#1" class="scrollto">в начало</a></li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 <section class="first-banner">
     <div class="container">
         <h1>Перестаньте тратить деньги на рекламе</h1>
@@ -132,7 +158,7 @@
         </div>
     </div>
 </section>
-<div class="section">
+<div id="2" class="section">
     <section class="feature-line-menu gray-bg">
         <div class="container">
             <h2>Преимущества посадочных страниц для Вашего бизнеса</h2>
@@ -422,7 +448,7 @@
         </div>
     </div>
 </section>
-<section class="portfolio  gray-bg">
+<section id="3" class="portfolio  gray-bg">
     <div class="container">
         <h2>Наши работы</h2>
         <div class="title-sep"><div></div></div>
@@ -435,7 +461,7 @@
         </div>
     </div>
 </section>
-<section class="contact-us">
+<section id="4" class="contact-us">
     <div class="container">
         <h2>Связаться с нами</h2>
         <div class="title-sep white"><div></div></div>
@@ -582,5 +608,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<!--<script src="js/scrollspy.js"></script>-->
+<script>
+    jQuery(document).ready(function() {
+        jQuery("a.scrollto").click(function () {
+            elementClick = jQuery(this).attr("href")
+            destination = jQuery(elementClick).offset().top-30;
+            jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+            return false;
+        });
+    });
+</script>
 </body>
 </html>
