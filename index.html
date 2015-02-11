@@ -34,11 +34,16 @@
                 <div class="container">
                     <span class="logo"><img src="img/logo.png" alt=""/></span>
                     <span class="navbar-example">
+                        <button type="button" class="nav_btn" onclick="show_menu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <ul class="clearfix nav nav-tabs">
-                            <li><a href="#4" class="scrollto">контакты</a></li>
-                            <li><a href="#3" class="scrollto">портфолио</a></li>
-                            <li><a href="#2" class="scrollto">преимущества</a></li>
                             <li><a href="#1" class="scrollto">в начало</a></li>
+                            <li><a href="#2" class="scrollto">преимущества</a></li>
+                            <li><a href="#3" class="scrollto">портфолио</a></li>
+                            <li><a href="#4" class="scrollto">контакты</a></li>
                         </ul>
                     </span>
                 </div>
@@ -610,14 +615,20 @@
 <script src="js/bootstrap.min.js"></script>
 <!--<script src="js/scrollspy.js"></script>-->
 <script>
-    jQuery(document).ready(function() {
-        jQuery("a.scrollto").click(function () {
-            elementClick = jQuery(this).attr("href")
-            destination = jQuery(elementClick).offset().top-30;
-            jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
-            return false;
-        });
+function show_menu() {
+    $("ul").toggle("200");
+};
+jQuery(document).ready(function() {
+    jQuery("a.scrollto").click(function () {
+        elementClick = jQuery(this).attr("href")
+        destination = jQuery(elementClick).offset().top-30;
+        jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+        return false;
     });
+    $("button").click(function () {
+//        $("ul").toggle("200");
+    });
+});
 </script>
 </body>
 </html>
